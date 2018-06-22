@@ -35,7 +35,7 @@ public class CategoryFragment extends Fragment implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-        if (getId() == R.id.btn_details_category){
+        if (v.getId() == R.id.btn_details_category){
             DetailCategoryFragment mDetailCategoryFragment = new DetailCategoryFragment();
             Bundle mBundle = new Bundle();
             mBundle.putString(DetailCategoryFragment.EXTRA_NAME, "Lifestyle");
